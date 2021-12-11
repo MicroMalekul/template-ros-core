@@ -31,10 +31,7 @@ def solution(obs):
     except Exception as e:
         pass
         # print(e)
-    if aver > 0.1:
-        action = [0.6, aver * 4.75]
-        print(aver * 4.5)
-    elif aver < -0.1:
+    if abs(aver) > 0.1:
         action = [0.6, aver * 4.5]
         print(aver * 4.5)
     else:
