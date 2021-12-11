@@ -32,12 +32,12 @@ def solution(obs):
         pass
         # print(e)
     if aver > 0.1:
-        action = [0.92, aver * 4.75]
+        action = [0.6, aver * 4.75]
         print(aver * 4.5)
     elif aver < -0.1:
-        action = [0.92, aver * 4.5]
+        action = [0.6, aver * 4.5]
         print(aver * 4.5)
     else:
-        action = [0.99, aver * 3]
+        action = [0.8, aver * 3]
         print(aver * 3)
     return action
